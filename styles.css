@@ -1,0 +1,198 @@
+:root {
+    --bgColor: #304852;
+    --fontColor: #B9DBE6;
+    --mainSection: #36595F;
+    --subSection: #5F818A;
+}
+
+/********************* Global ******************/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--fontColor);
+}
+
+.margin {
+    margin-bottom: 5%;
+}
+
+.padding {
+    padding: 7%;
+}
+
+.mainSection {
+    text-align: center;
+    background-color: var(--mainSection);
+    border-radius: 20px;
+}
+
+.sectionHeader {
+    text-align: center;
+}
+
+/********************* Navbar ******************/
+.navbar {
+    padding: 4%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-nav {
+        --bs-navbar-hover-color: var(--fontColor);
+}
+
+.navbar-brand, .nav-item {
+    color: var(--fontColor);
+}
+
+.navbar-brand {
+    margin-left: 3rem;
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+}
+
+.navbar-brand:hover, .navbar-brand:visited, .nav-item a:visited {
+    color: var(--fontColor);
+}
+
+.nav-item {
+    transition: all 0.3s;
+    border-radius: 15px;
+    margin: 0 5px;
+}
+
+.nav-item a:hover {
+    background-color: var(--fontColor);
+    color: var(--bgColor);
+}
+
+.navbar-toggler {
+    margin-right: 3rem;
+    color: var(--fontColor);
+    border-color: var(--fontColor);
+}
+
+.navbar-toggler-icon {
+    filter: invert(90%) sepia(12%) saturate(517%) hue-rotate(155deg) brightness(95%) contrast(89%);
+}
+
+/********************* Main ******************/
+#main {
+    padding: 5% 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/********************* Info ******************/
+#info {
+    display: flex;
+    text-align: left;
+    scroll-margin-top: 100px;
+}
+
+.flexItem {
+    flex: 1 1 0px;
+}
+
+.flexItem h1 {
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+.flexItem h5 {
+    line-height: 1.5;
+}
+
+.flexItem p {
+    font-size: 1.4rem;
+}
+
+/********************* Skills ******************/
+#skills {
+    scroll-margin-top: 100px;
+}
+
+.skillRow {
+    margin-bottom: 3%;
+}
+
+.skillIcon {
+    margin-bottom: 10px;
+}
+
+/********************* Projects ******************/
+#projects {
+    scroll-margin-top: 100px;
+}
+
+.carousel-item p {
+    width: 60%;
+    line-height: 1.5;
+    margin: auto;
+}
+
+#findMore {
+    margin: 7% 0;
+}
+
+#findMore h3 {
+    margin-bottom: 2%;
+}
+
+/********************* ReachOut ******************/
+#contact {
+    scroll-margin-top: 100px;
+}
+
+.btn-outline-light {
+    --bs-btn-color: var(--fontColor);
+    --bs-btn-border-color: var(--fontColor);
+    --bs-btn-hover-color: var(--mainSection);
+    --bs-btn-hover-bg: var(--fontColor);
+}
+
+#contact p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 4%;
+}
+
+/********************* Footer ******************/
+#footer {
+    padding: 3%;
+    border-radius: 0;
+}
+
+#footer a {
+    text-decoration: none;
+    margin: 0 2%;
+}
+
+#footer p {
+    margin-top: 2rem;
+    opacity: 0.6;
+}
+
+.footer-icon {
+    color: var(--fontColor);
+}
+
+.footer-icon:hover {
+    animation: shake 0.5s;
+    transition: all 0.3s;
+}
+
+.footer-icon:active {
+    color: var(--subSection);
+}
+
+@keyframes shake {
+    20%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+    60%{transform: rotate(15deg);}
+    80%{transform: rotate(0);}
+}
